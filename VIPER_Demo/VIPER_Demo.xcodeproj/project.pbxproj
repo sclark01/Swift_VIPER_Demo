@@ -19,6 +19,7 @@
 		581552171D88A0D2009349E2 /* PeopleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581552131D88A0D2009349E2 /* PeopleListPresenter.swift */; };
 		581552181D88A0D2009349E2 /* PeopleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581552141D88A0D2009349E2 /* PeopleListView.swift */; };
 		581552191D88A0D2009349E2 /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581552151D88A0D2009349E2 /* PeopleListViewController.swift */; };
+		5815521B1D88A1E4009349E2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815521A1D88A1E4009349E2 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		581552131D88A0D2009349E2 /* PeopleListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListPresenter.swift; sourceTree = "<group>"; };
 		581552141D88A0D2009349E2 /* PeopleListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListView.swift; sourceTree = "<group>"; };
 		581552151D88A0D2009349E2 /* PeopleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListViewController.swift; sourceTree = "<group>"; };
+		5815521A1D88A1E4009349E2 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		5F60D7A9FFE18D28BC7A578D /* Pods_VIPER_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90DD7CDAC0FA1E470F6EFF34 /* Pods-VIPER_DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER_DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER_DemoTests/Pods-VIPER_DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E397B0817E3353A2BDA5911 /* Pods-VIPER_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER_Demo/Pods-VIPER_Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		581552111D889FCC009349E2 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				5815521A1D88A1E4009349E2 /* Person.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				581552191D88A0D2009349E2 /* PeopleListViewController.swift in Sources */,
 				581552171D88A0D2009349E2 /* PeopleListPresenter.swift in Sources */,
 				581552181D88A0D2009349E2 /* PeopleListView.swift in Sources */,
+				5815521B1D88A1E4009349E2 /* Person.swift in Sources */,
 				581552161D88A0D2009349E2 /* PeopleListInteractor.swift in Sources */,
 				581552101D889FB3009349E2 /* PeopleService.swift in Sources */,
 			);
