@@ -1,0 +1,19 @@
+workspace 'VIPER_Demo'
+project 'VIPER_Demo.xcodeproj'
+platform :ios, '9.3'
+
+use_frameworks!
+
+def testing_pods
+end
+
+def networking_pods 
+end
+
+target 'VIPER_Demo' do
+  networking_pods
+end
+
+target 'VIPER_DemoTests' do
+  testing_pods
+end
