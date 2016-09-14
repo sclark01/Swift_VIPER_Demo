@@ -40,3 +40,12 @@ extension PeopleListViewController : UITableViewDataSource {
         return cell
     }
 }
+
+extension PeopleListViewController : UITableViewDelegate {
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let person = people[indexPath.row]
+        if let eventHandler = eventHandler as? PeopleListPresenter {
+            eventHandler.details(person: person)
+        }
+    }
+}

@@ -7,22 +7,36 @@ class PeopleListWireFrame {
     var peopleListInteractor: PeopleListInteractorType?
     var peopleListViewController: PeopleListViewController?
 
-    init(mainWireFrame: MainWireFrame, peopleListPresenter: PeopleListPresenterType, peopleListInteractor: PeopleListInteractorType) {
+    let personDetailsWireFrame: PersonDetailsWireFrame
+
+    init(mainWireFrame: MainWireFrame, peopleListPresenter: PeopleListPresenterType, peopleListInteractor: PeopleListInteractorType, detailsWireFrame: PersonDetailsWireFrame) {
         self.mainWireFrame = mainWireFrame
         self.peopleListPresenter = peopleListPresenter
         self.peopleListInteractor = peopleListInteractor
+        self.personDetailsWireFrame = detailsWireFrame
     }
 
     func presentListInterfaceFrom(window: UIWindow) {
         let storyBoard = UIStoryboard(name: "PeopleList", bundle: nil)
         guard let viewController = storyBoard.instantiateInitialViewController() as? PeopleListViewController else { return }
 
-        peopleListPresenter.interactor = peopleListInteractor
-        peopleListPresenter.userInterface = viewController
+        buildPeopleListPresenter(withViewController: viewController)
 
         viewController.eventHandler = peopleListPresenter
         peopleListViewController = viewController
 
         mainWireFrame.display(rootViewController: viewController, inWindow: window)
+    }
+
+    func presentDetailsFor(person person: Person) {
+        if let viewController = peopleListViewController {
+            personDetailsWireFrame.presentDetailsViewFrom(viewController: viewController)
+        }
+    }
+
+    private func buildPeopleListPresenter(withViewController viewController: PeopleListViewController) {
+        peopleListPresenter.interactor = peopleListInteractor
+        peopleListPresenter.userInterface = viewController
+        peopleListPresenter.peopleListWireFrame = self
     }
 }
