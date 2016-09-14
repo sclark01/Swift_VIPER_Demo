@@ -1,6 +1,8 @@
 import UIKit
 
-class PeopleListViewController : UIViewController, PeopleListView {
+class PeopleListViewController : UIViewController, PeopleListViewType {
+    var eventHandler: PeopleListPresenterType!
+    
     func set() {
 
     }
