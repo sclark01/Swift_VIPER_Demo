@@ -6,7 +6,7 @@ class AppDependencies {
 
     init() {
         let presenter = PeopleListPresenter()
-        let peopleListInteractor = PeopleListInteractor(output: presenter)
+        let peopleListInteractor = PeopleListInteractor(output: presenter, peopleService: PeopleService())
         self.peopleListWireFrame = PeopleListWireFrame(mainWireFrame: MainWireFrame(), peopleListPresenter: presenter, peopleListInteractor: peopleListInteractor)
     }
 

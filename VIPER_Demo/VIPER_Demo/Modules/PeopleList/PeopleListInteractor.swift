@@ -2,12 +2,22 @@ import Foundation
 
 protocol PeopleListInteractorType {
     var output: PeopleListPresenterType { get }
+    var service: PeopleServiceType { get }
 }
 
-struct PeopleListInteractor : PeopleListInteractorType {
+class PeopleListInteractor : PeopleListInteractorType, PeopleListInteractorInput {
     let output: PeopleListPresenterType
-
-    init(output: PeopleListPresenterType) {
+    let service: PeopleServiceType
+    init(output: PeopleListPresenterType, peopleService: PeopleServiceType) {
         self.output = output
+        self.service = peopleService
+    }
+
+    func getPeople() {
+        service.getPeople { [weak self] people in
+            guard let strongSelf = self,
+                output = strongSelf.output as? PeopleListPresenter else { return }
+            output.gotPeople(people: people)
+        }
     }
 }

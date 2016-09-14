@@ -8,6 +8,8 @@ def testing_pods
 end
 
 def networking_pods 
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
 end
 
 target 'VIPER_Demo' do

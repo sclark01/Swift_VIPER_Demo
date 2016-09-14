@@ -1,5 +1,5 @@
 import Foundation
 
 protocol PeopleListViewType {
-    func set()
+    func set(people: [Person])
 }
