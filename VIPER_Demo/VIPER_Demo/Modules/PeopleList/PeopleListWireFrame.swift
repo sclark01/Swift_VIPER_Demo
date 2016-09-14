@@ -17,11 +17,10 @@ class PeopleListWireFrame {
         let storyBoard = UIStoryboard(name: "PeopleList", bundle: nil)
         guard let viewController = storyBoard.instantiateInitialViewController() as? PeopleListViewController else { return }
 
-
         peopleListPresenter.interactor = peopleListInteractor
         peopleListPresenter.userInterface = viewController
-        viewController.eventHandler = peopleListPresenter
 
+        viewController.eventHandler = peopleListPresenter
         peopleListViewController = viewController
 
         mainWireFrame.display(rootViewController: viewController, inWindow: window)

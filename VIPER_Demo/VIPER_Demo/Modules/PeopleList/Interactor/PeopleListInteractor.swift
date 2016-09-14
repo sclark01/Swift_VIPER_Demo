@@ -8,6 +8,7 @@ protocol PeopleListInteractorType {
 class PeopleListInteractor : PeopleListInteractorType, PeopleListInteractorInput {
     let output: PeopleListPresenterType
     let service: PeopleServiceType
+
     init(output: PeopleListPresenterType, peopleService: PeopleServiceType) {
         self.output = output
         self.service = peopleService
