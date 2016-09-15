@@ -28,9 +28,9 @@ class PeopleListWireFrame {
         mainWireFrame.display(rootViewController: viewController, inWindow: window)
     }
 
-    func presentDetailsFor(person person: Person) {
+    func presentDetailsFor(id id: Int) {
         if let viewController = peopleListViewController {
-            personDetailsWireFrame.presentDetailsViewFrom(viewController: viewController)
+            personDetailsWireFrame.presentDetailsViewFrom(viewController: viewController, withId: id)
         }
     }
 

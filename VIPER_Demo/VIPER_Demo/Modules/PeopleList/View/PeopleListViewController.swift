@@ -4,7 +4,7 @@ class PeopleListViewController : UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var eventHandler: PeopleListPresenterType!
 
-    private var people: [Person] = []
+    private var peopleList: PeopleListDataModel?
 
     override func viewDidLoad() {
         if let eventHandler = eventHandler as? PeopleListPresenter {
@@ -16,36 +16,37 @@ class PeopleListViewController : UIViewController {
 
 extension PeopleListViewController : PeopleListViewType {
     func set(people: [Person]) {
-        self.people = people
+        self.peopleList = PeopleListDataModel(people: people)
         tableView.reloadData()
     }
 }
 
 extension PeopleListViewController : UITableViewDataSource {
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
+        return peopleList?.sections ?? 1
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return people.count
+        return peopleList?.rows ?? 0
     }
 
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cellID = "person"
         let cell = tableView.dequeueReusableCellWithIdentifier(cellID) ?? UITableViewCell(style: .Subtitle, reuseIdentifier: cellID)
 
-        let person = people[indexPath.row]
-        cell.textLabel?.text = person.name
-        cell.detailTextLabel?.text = person.phone
+        if let person = peopleList?.personAt(index: indexPath.row) {
+            cell.textLabel?.text = person.name
+            cell.detailTextLabel?.text = person.phone
+        }
         return cell
     }
 }
 
 extension PeopleListViewController : UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let person = people[indexPath.row]
-        if let eventHandler = eventHandler as? PeopleListPresenter {
-            eventHandler.details(person: person)
+        if let person = peopleList?.personAt(index: indexPath.row),
+           let eventHandler = eventHandler as? PeopleListPresenter {
+            eventHandler.detailsForPerson(withId: person.id)
         }
     }
 }

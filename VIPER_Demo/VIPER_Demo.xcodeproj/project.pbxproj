@@ -31,6 +31,12 @@
 		584F22B71D89EFAD00722C1D /* PeopleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584F22B61D89EFAD00722C1D /* PeopleListPresenter.swift */; };
 		584F22BB1D89F03200722C1D /* PeopleListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584F22B91D89F03200722C1D /* PeopleListInteractor.swift */; };
 		584F22BC1D89F03200722C1D /* PeopleListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584F22BA1D89F03200722C1D /* PeopleListInteractorIO.swift */; };
+		58F6350B1D8B16DF0043FCA4 /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6350A1D8B16DF0043FCA4 /* PersonDetailsView.swift */; };
+		58F6350D1D8B18AB0043FCA4 /* PersonDetailsModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6350C1D8B18AB0043FCA4 /* PersonDetailsModuleInterface.swift */; };
+		58F6350F1D8B199E0043FCA4 /* PersonDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6350E1D8B199E0043FCA4 /* PersonDetailsInteractor.swift */; };
+		58F635111D8B19BA0043FCA4 /* PersonDetailsInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635101D8B19B90043FCA4 /* PersonDetailsInteractorIO.swift */; };
+		58F635131D8B24440043FCA4 /* PersonDetailsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635121D8B24440043FCA4 /* PersonDetailsDataModel.swift */; };
+		58F635151D8B26220043FCA4 /* PeopleListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635141D8B26220043FCA4 /* PeopleListDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +78,12 @@
 		584F22B61D89EFAD00722C1D /* PeopleListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListPresenter.swift; sourceTree = "<group>"; };
 		584F22B91D89F03200722C1D /* PeopleListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListInteractor.swift; sourceTree = "<group>"; };
 		584F22BA1D89F03200722C1D /* PeopleListInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListInteractorIO.swift; sourceTree = "<group>"; };
+		58F6350A1D8B16DF0043FCA4 /* PersonDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
+		58F6350C1D8B18AB0043FCA4 /* PersonDetailsModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsModuleInterface.swift; sourceTree = "<group>"; };
+		58F6350E1D8B199E0043FCA4 /* PersonDetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsInteractor.swift; sourceTree = "<group>"; };
+		58F635101D8B19B90043FCA4 /* PersonDetailsInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsInteractorIO.swift; sourceTree = "<group>"; };
+		58F635121D8B24440043FCA4 /* PersonDetailsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsDataModel.swift; sourceTree = "<group>"; };
+		58F635141D8B26220043FCA4 /* PeopleListDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListDataModel.swift; sourceTree = "<group>"; };
 		5F60D7A9FFE18D28BC7A578D /* Pods_VIPER_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90DD7CDAC0FA1E470F6EFF34 /* Pods-VIPER_DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER_DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER_DemoTests/Pods-VIPER_DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E397B0817E3353A2BDA5911 /* Pods-VIPER_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER_Demo/Pods-VIPER_Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -199,6 +211,7 @@
 				583D96431D89FC440017FB0B /* Interactor */,
 				583D96401D89FC2B0017FB0B /* View */,
 				583D963E1D89FC080017FB0B /* PersonDetailsWireFrame.swift */,
+				58F6350C1D8B18AB0043FCA4 /* PersonDetailsModuleInterface.swift */,
 			);
 			path = PersonDetails;
 			sourceTree = "<group>";
@@ -208,6 +221,7 @@
 			children = (
 				583D96471D8A01160017FB0B /* PersonDetails.storyboard */,
 				583D96491D8A01260017FB0B /* PersonDetailsViewController.swift */,
+				58F6350A1D8B16DF0043FCA4 /* PersonDetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,6 +229,8 @@
 		583D96431D89FC440017FB0B /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				58F6350E1D8B199E0043FCA4 /* PersonDetailsInteractor.swift */,
+				58F635101D8B19B90043FCA4 /* PersonDetailsInteractorIO.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -223,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				583D96451D89FE200017FB0B /* PersonDetailsPresenter.swift */,
+				58F635121D8B24440043FCA4 /* PersonDetailsDataModel.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -231,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				584F22B61D89EFAD00722C1D /* PeopleListPresenter.swift */,
+				58F635141D8B26220043FCA4 /* PeopleListDataModel.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -466,7 +484,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F6350F1D8B199E0043FCA4 /* PersonDetailsInteractor.swift in Sources */,
 				583D963A1D89F0D40017FB0B /* PeopleListViewController.swift in Sources */,
+				58F635111D8B19BA0043FCA4 /* PersonDetailsInteractorIO.swift in Sources */,
+				58F6350D1D8B18AB0043FCA4 /* PersonDetailsModuleInterface.swift in Sources */,
 				581552421D88C0AB009349E2 /* AppDependencies.swift in Sources */,
 				581552481D88C332009349E2 /* MainWireFrame.swift in Sources */,
 				584F22B41D89D65600722C1D /* PeopleTransformer.swift in Sources */,
@@ -474,9 +495,12 @@
 				581552441D88C137009349E2 /* PeopleListWireFrame.swift in Sources */,
 				583D96461D89FE200017FB0B /* PersonDetailsPresenter.swift in Sources */,
 				583D963F1D89FC080017FB0B /* PersonDetailsWireFrame.swift in Sources */,
+				58F635131D8B24440043FCA4 /* PersonDetailsDataModel.swift in Sources */,
 				583D964A1D8A01260017FB0B /* PersonDetailsViewController.swift in Sources */,
 				584F22B71D89EFAD00722C1D /* PeopleListPresenter.swift in Sources */,
 				5815521B1D88A1E4009349E2 /* Person.swift in Sources */,
+				58F6350B1D8B16DF0043FCA4 /* PersonDetailsView.swift in Sources */,
+				58F635151D8B26220043FCA4 /* PeopleListDataModel.swift in Sources */,
 				583D96391D89F0D40017FB0B /* PeopleListView.swift in Sources */,
 				584F22B21D89D30000722C1D /* PeopleListModuleInterface.swift in Sources */,
 				584F22BC1D89F03200722C1D /* PeopleListInteractorIO.swift in Sources */,

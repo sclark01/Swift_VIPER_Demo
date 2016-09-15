@@ -20,7 +20,7 @@ class PeopleListPresenter : PeopleListPresenterType, PeopleListInteractorOutput,
         userInterface?.set(people)
     }
 
-    func details(person person: Person) {
-        peopleListWireFrame?.presentDetailsFor(person: person)
+    func detailsForPerson(withId Id: Int) {
+        peopleListWireFrame?.presentDetailsFor(id: Id)
     }
 }

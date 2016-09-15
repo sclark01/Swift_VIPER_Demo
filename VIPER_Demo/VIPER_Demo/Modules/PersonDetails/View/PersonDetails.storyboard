@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WFe-lL-YRU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WFe-lL-YRU">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Person Details View Controller-->
@@ -16,8 +17,73 @@
                     <view key="view" contentMode="scaleToFill" id="Ull-u2-kU7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.40124901909999999" green="1" blue="0.115167277" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Lzr-se-Hq8">
+                                <rect key="frame" x="20" y="20" width="560" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="it2-2h-xuO">
+                                        <rect key="frame" x="258" y="0.0" width="45" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="67" id="epU-AP-X61"/>
+                                            <constraint firstAttribute="width" constant="45" id="sXO-pd-MPc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="sXO-pd-MPc"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bb3-cW-Jbv">
+                                        <rect key="frame" x="256" y="67" width="49" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="67" id="5cN-CE-fJW"/>
+                                            <constraint firstAttribute="width" constant="49" id="UTY-vl-9k0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="UTY-vl-9k0"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4d-gY-i3m">
+                                        <rect key="frame" x="265" y="134" width="30" height="66"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="66" id="WTN-Eh-eDq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="qDi-Eh-jTO"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lzr-se-Hq8" secondAttribute="trailing" constant="511" id="9rd-WT-mMj"/>
+                            <constraint firstItem="Lzr-se-Hq8" firstAttribute="top" secondItem="8Ok-sq-NPj" secondAttribute="bottom" id="Eag-Qy-d7Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Lzr-se-Hq8" secondAttribute="trailing" id="TV8-Yg-Z1M"/>
+                            <constraint firstItem="Lzr-se-Hq8" firstAttribute="leading" secondItem="Ull-u2-kU7" secondAttribute="leadingMargin" id="sZt-Av-1YK"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9rd-WT-mMj"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="Q4d-gY-i3m" id="Yj7-gE-cJK"/>
+                        <outlet property="nameLabel" destination="it2-2h-xuO" id="8ea-Wj-yfR"/>
+                        <outlet property="phoneLabel" destination="bb3-cW-Jbv" id="DK1-Tb-BbG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AsG-Fx-ETI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
