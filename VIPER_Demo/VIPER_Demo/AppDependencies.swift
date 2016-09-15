@@ -5,6 +5,10 @@ class AppDependencies {
     let peopleListWireFrame: PeopleListWireFrame
 
     init() {
+        self.peopleListWireFrame = AppDependencies.configureDependencies()
+    }
+
+    private static func configureDependencies() -> PeopleListWireFrame {
         let peopleListPresenter = PeopleListPresenter()
         let personDetailsPresenter = PersonDetailsPresenter()
         let service = PeopleService()
@@ -15,7 +19,7 @@ class AppDependencies {
         let personDetailsWireFrame = PersonDetailsWireFrame(personDetailsPresenter: personDetailsPresenter, personDetailsInteractor: personDetailsInteractor)
         let peopleListWireFrame = PeopleListWireFrame(mainWireFrame: MainWireFrame(), peopleListPresenter: peopleListPresenter, peopleListInteractor: peopleListInteractor, detailsWireFrame: personDetailsWireFrame)
 
-        self.peopleListWireFrame = peopleListWireFrame
+        return peopleListWireFrame
     }
 
     func installRootViewControllerInto(window: UIWindow) {

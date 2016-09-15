@@ -13,7 +13,6 @@
 		581551E51D889995009349E2 /* PeopleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581551E31D889995009349E2 /* PeopleList.storyboard */; };
 		581551E71D889995009349E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 581551E61D889995009349E2 /* Assets.xcassets */; };
 		581551EA1D889995009349E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581551E81D889995009349E2 /* LaunchScreen.storyboard */; };
-		581551F51D889996009349E2 /* VIPER_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581551F41D889996009349E2 /* VIPER_DemoTests.swift */; };
 		581552101D889FB3009349E2 /* PeopleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815520F1D889FB3009349E2 /* PeopleService.swift */; };
 		5815521B1D88A1E4009349E2 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5815521A1D88A1E4009349E2 /* Person.swift */; };
 		5815521E1D88A514009349E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5815521D1D88A514009349E2 /* Main.storyboard */; };
@@ -37,6 +36,7 @@
 		58F635111D8B19BA0043FCA4 /* PersonDetailsInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635101D8B19B90043FCA4 /* PersonDetailsInteractorIO.swift */; };
 		58F635131D8B24440043FCA4 /* PersonDetailsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635121D8B24440043FCA4 /* PersonDetailsDataModel.swift */; };
 		58F635151D8B26220043FCA4 /* PeopleListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635141D8B26220043FCA4 /* PeopleListDataModel.swift */; };
+		58F635231D8B38EA0043FCA4 /* PeopleServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635221D8B38EA0043FCA4 /* PeopleServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,6 @@
 		581551E91D889995009349E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		581551EB1D889995009349E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		581551F01D889996009349E2 /* VIPER_DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VIPER_DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		581551F41D889996009349E2 /* VIPER_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIPER_DemoTests.swift; sourceTree = "<group>"; };
 		581551F61D889996009349E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5815520F1D889FB3009349E2 /* PeopleService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleService.swift; sourceTree = "<group>"; };
 		5815521A1D88A1E4009349E2 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -84,6 +83,7 @@
 		58F635101D8B19B90043FCA4 /* PersonDetailsInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsInteractorIO.swift; sourceTree = "<group>"; };
 		58F635121D8B24440043FCA4 /* PersonDetailsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsDataModel.swift; sourceTree = "<group>"; };
 		58F635141D8B26220043FCA4 /* PeopleListDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListDataModel.swift; sourceTree = "<group>"; };
+		58F635221D8B38EA0043FCA4 /* PeopleServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleServiceTests.swift; sourceTree = "<group>"; };
 		5F60D7A9FFE18D28BC7A578D /* Pods_VIPER_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90DD7CDAC0FA1E470F6EFF34 /* Pods-VIPER_DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER_DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER_DemoTests/Pods-VIPER_DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E397B0817E3353A2BDA5911 /* Pods-VIPER_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER_Demo/Pods-VIPER_Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,7 +150,9 @@
 		581551F31D889996009349E2 /* VIPER_DemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				581551F41D889996009349E2 /* VIPER_DemoTests.swift */,
+				58F635181D8B373D0043FCA4 /* ServicesTests */,
+				58F635171D8B37300043FCA4 /* ModulesTests */,
+				58F635161D8B37170043FCA4 /* EntitiesTests */,
 				581551F61D889996009349E2 /* Info.plist */,
 			);
 			path = VIPER_DemoTests;
@@ -260,6 +262,96 @@
 				584F22BA1D89F03200722C1D /* PeopleListInteractorIO.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		58F635161D8B37170043FCA4 /* EntitiesTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EntitiesTests;
+			sourceTree = "<group>";
+		};
+		58F635171D8B37300043FCA4 /* ModulesTests */ = {
+			isa = PBXGroup;
+			children = (
+				58F6351B1D8B37DC0043FCA4 /* PeopleListTests */,
+				58F6351A1D8B37C00043FCA4 /* PersonDetailsTests */,
+			);
+			name = ModulesTests;
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		58F635181D8B373D0043FCA4 /* ServicesTests */ = {
+			isa = PBXGroup;
+			children = (
+				58F635221D8B38EA0043FCA4 /* PeopleServiceTests.swift */,
+			);
+			path = ServicesTests;
+			sourceTree = "<group>";
+		};
+		58F6351A1D8B37C00043FCA4 /* PersonDetailsTests */ = {
+			isa = PBXGroup;
+			children = (
+				58F6351E1D8B38470043FCA4 /* ViewTests */,
+				58F6351D1D8B38200043FCA4 /* InteractorTests */,
+				58F6351C1D8B380E0043FCA4 /* PresenterTests */,
+			);
+			name = PersonDetailsTests;
+			path = VIPER_DemoTests/ModulesTests/PersonDetailsTests;
+			sourceTree = "<group>";
+		};
+		58F6351B1D8B37DC0043FCA4 /* PeopleListTests */ = {
+			isa = PBXGroup;
+			children = (
+				58F635211D8B388B0043FCA4 /* PresenterTests */,
+				58F635201D8B38780043FCA4 /* InteractorTests */,
+				58F6351F1D8B38650043FCA4 /* ViewTests */,
+			);
+			name = PeopleListTests;
+			path = VIPER_DemoTests/ModulesTests/PeopleListTests;
+			sourceTree = "<group>";
+		};
+		58F6351C1D8B380E0043FCA4 /* PresenterTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PresenterTests;
+			sourceTree = "<group>";
+		};
+		58F6351D1D8B38200043FCA4 /* InteractorTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = InteractorTests;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		58F6351E1D8B38470043FCA4 /* ViewTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewTests;
+			sourceTree = "<group>";
+		};
+		58F6351F1D8B38650043FCA4 /* ViewTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewTests;
+			sourceTree = "<group>";
+		};
+		58F635201D8B38780043FCA4 /* InteractorTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = InteractorTests;
+			sourceTree = "<group>";
+		};
+		58F635211D8B388B0043FCA4 /* PresenterTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PresenterTests;
 			sourceTree = "<group>";
 		};
 		829FF0C0F334148F9E12E797 /* Pods */ = {
@@ -513,7 +605,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				581551F51D889996009349E2 /* VIPER_DemoTests.swift in Sources */,
+				58F635231D8B38EA0043FCA4 /* PeopleServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,10 +754,12 @@
 			baseConfigurationReference = 90DD7CDAC0FA1E470F6EFF34 /* Pods-VIPER_DemoTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = VIPER_DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.VIPER-DemoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VIPER_Demo.app/VIPER_Demo";
 			};
 			name = Debug;
@@ -675,6 +769,7 @@
 			baseConfigurationReference = D317032A8855387120A188F1 /* Pods-VIPER_DemoTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = VIPER_DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.VIPER-DemoTests";
