@@ -38,6 +38,12 @@
 		58F635151D8B26220043FCA4 /* PeopleListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635141D8B26220043FCA4 /* PeopleListDataModel.swift */; };
 		58F635231D8B38EA0043FCA4 /* PeopleServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635221D8B38EA0043FCA4 /* PeopleServiceTests.swift */; };
 		58F635251D8B3BBF0043FCA4 /* PeopleTransformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635241D8B3BBF0043FCA4 /* PeopleTransformerTests.swift */; };
+		58F635271D8B490C0043FCA4 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635261D8B490C0043FCA4 /* PersonTests.swift */; };
+		58F635291D8B4A890043FCA4 /* PersonDetailsWireFrameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635281D8B4A890043FCA4 /* PersonDetailsWireFrameTests.swift */; };
+		58F6352D1D8B4B6B0043FCA4 /* PersonDetailsPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6352C1D8B4B6B0043FCA4 /* PersonDetailsPresenterMock.swift */; };
+		58F6352F1D8B4CA10043FCA4 /* TestablePersonDetailsWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6352E1D8B4CA10043FCA4 /* TestablePersonDetailsWireFrame.swift */; };
+		58F635311D8B4D9D0043FCA4 /* PersonDetailsInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635301D8B4D9D0043FCA4 /* PersonDetailsInteractorMock.swift */; };
+		58F635331D8B4E1E0043FCA4 /* PeopleServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635321D8B4E1E0043FCA4 /* PeopleServiceMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +92,12 @@
 		58F635141D8B26220043FCA4 /* PeopleListDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListDataModel.swift; sourceTree = "<group>"; };
 		58F635221D8B38EA0043FCA4 /* PeopleServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleServiceTests.swift; sourceTree = "<group>"; };
 		58F635241D8B3BBF0043FCA4 /* PeopleTransformerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTransformerTests.swift; sourceTree = "<group>"; };
+		58F635261D8B490C0043FCA4 /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTests.swift; sourceTree = "<group>"; };
+		58F635281D8B4A890043FCA4 /* PersonDetailsWireFrameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonDetailsWireFrameTests.swift; path = VIPER_DemoTests/ModulesTests/PersonDetailsTests/PersonDetailsWireFrameTests.swift; sourceTree = SOURCE_ROOT; };
+		58F6352C1D8B4B6B0043FCA4 /* PersonDetailsPresenterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonDetailsPresenterMock.swift; path = VIPER_DemoTests/ModulesTests/PersonDetailsTests/Mocks/PersonDetailsPresenterMock.swift; sourceTree = SOURCE_ROOT; };
+		58F6352E1D8B4CA10043FCA4 /* TestablePersonDetailsWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestablePersonDetailsWireFrame.swift; path = VIPER_DemoTests/ModulesTests/PersonDetailsTests/TestablePersonDetailsWireFrame.swift; sourceTree = SOURCE_ROOT; };
+		58F635301D8B4D9D0043FCA4 /* PersonDetailsInteractorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonDetailsInteractorMock.swift; path = VIPER_DemoTests/ModulesTests/PersonDetailsTests/Mocks/PersonDetailsInteractorMock.swift; sourceTree = SOURCE_ROOT; };
+		58F635321D8B4E1E0043FCA4 /* PeopleServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleServiceMock.swift; sourceTree = "<group>"; };
 		5F60D7A9FFE18D28BC7A578D /* Pods_VIPER_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90DD7CDAC0FA1E470F6EFF34 /* Pods-VIPER_DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER_DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER_DemoTests/Pods-VIPER_DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E397B0817E3353A2BDA5911 /* Pods-VIPER_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER_Demo/Pods-VIPER_Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -269,6 +281,7 @@
 		58F635161D8B37170043FCA4 /* EntitiesTests */ = {
 			isa = PBXGroup;
 			children = (
+				58F635261D8B490C0043FCA4 /* PersonTests.swift */,
 			);
 			path = EntitiesTests;
 			sourceTree = "<group>";
@@ -288,6 +301,7 @@
 			children = (
 				58F635221D8B38EA0043FCA4 /* PeopleServiceTests.swift */,
 				58F635241D8B3BBF0043FCA4 /* PeopleTransformerTests.swift */,
+				58F635321D8B4E1E0043FCA4 /* PeopleServiceMock.swift */,
 			);
 			path = ServicesTests;
 			sourceTree = "<group>";
@@ -295,9 +309,12 @@
 		58F6351A1D8B37C00043FCA4 /* PersonDetailsTests */ = {
 			isa = PBXGroup;
 			children = (
+				58F6352B1D8B4B530043FCA4 /* Mocks */,
 				58F6351E1D8B38470043FCA4 /* ViewTests */,
 				58F6351D1D8B38200043FCA4 /* InteractorTests */,
 				58F6351C1D8B380E0043FCA4 /* PresenterTests */,
+				58F635281D8B4A890043FCA4 /* PersonDetailsWireFrameTests.swift */,
+				58F6352E1D8B4CA10043FCA4 /* TestablePersonDetailsWireFrame.swift */,
 			);
 			name = PersonDetailsTests;
 			path = VIPER_DemoTests/ModulesTests/PersonDetailsTests;
@@ -355,6 +372,15 @@
 			children = (
 			);
 			path = PresenterTests;
+			sourceTree = "<group>";
+		};
+		58F6352B1D8B4B530043FCA4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				58F6352C1D8B4B6B0043FCA4 /* PersonDetailsPresenterMock.swift */,
+				58F635301D8B4D9D0043FCA4 /* PersonDetailsInteractorMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		829FF0C0F334148F9E12E797 /* Pods */ = {
@@ -609,6 +635,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				58F635251D8B3BBF0043FCA4 /* PeopleTransformerTests.swift in Sources */,
+				58F635271D8B490C0043FCA4 /* PersonTests.swift in Sources */,
+				58F635331D8B4E1E0043FCA4 /* PeopleServiceMock.swift in Sources */,
+				58F635311D8B4D9D0043FCA4 /* PersonDetailsInteractorMock.swift in Sources */,
+				58F6352D1D8B4B6B0043FCA4 /* PersonDetailsPresenterMock.swift in Sources */,
+				58F635291D8B4A890043FCA4 /* PersonDetailsWireFrameTests.swift in Sources */,
+				58F6352F1D8B4CA10043FCA4 /* TestablePersonDetailsWireFrame.swift in Sources */,
 				58F635231D8B38EA0043FCA4 /* PeopleServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

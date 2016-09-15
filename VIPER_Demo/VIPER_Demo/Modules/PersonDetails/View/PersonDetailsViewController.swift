@@ -1,12 +1,14 @@
 import UIKit
 
 class PersonDetailsViewController : UIViewController {
-    var eventHandler: PersonDetailsPresenter?
+    var eventHandler: PersonDetailsPresenterType?
 
     var personId: Int? {
         didSet {
             if let id = personId {
-                eventHandler?.updateViewFor(id: id)
+                if let eventHandler = eventHandler as? PersonDetailsPresenter {
+                    eventHandler.updateViewFor(id: id)
+                }
             }
         }
     }

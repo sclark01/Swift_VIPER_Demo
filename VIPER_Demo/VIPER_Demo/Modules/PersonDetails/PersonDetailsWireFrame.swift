@@ -2,11 +2,11 @@ import UIKit
 
 class PersonDetailsWireFrame {
 
-    let personDetailsPresenter: PersonDetailsPresenter
+    var personDetailsPresenter: PersonDetailsPresenterType
     var personDetailsViewController: PersonDetailsViewController?
     let personDetailsInteractor: PersonDetailsInteractorType
 
-    init(personDetailsPresenter presenter: PersonDetailsPresenter, personDetailsInteractor: PersonDetailsInteractorType) {
+    init(personDetailsPresenter presenter: PersonDetailsPresenterType, personDetailsInteractor: PersonDetailsInteractorType) {
         self.personDetailsPresenter = presenter
         self.personDetailsInteractor = personDetailsInteractor
     }
@@ -15,15 +15,23 @@ class PersonDetailsWireFrame {
         let storyBoard = UIStoryboard(name: "PersonDetails", bundle: nil)
         guard let newViewController = storyBoard.instantiateInitialViewController() as? PersonDetailsViewController else { return }
 
-        personDetailsPresenter.userInterface = newViewController
-        personDetailsPresenter.personDetailsWireFrame = self
-        personDetailsPresenter.interactor = personDetailsInteractor
+        configurePersonDetailsPresenterWith(viewController: newViewController)
 
         newViewController.eventHandler = personDetailsPresenter
         newViewController.personId = id
 
         personDetailsViewController = newViewController
 
-        viewController.navigationController?.pushViewController(newViewController, animated: true)
+        push(newViewController: newViewController, onTo: viewController)
+    }
+
+    internal func push(newViewController vc: UIViewController, onTo oldVC: UIViewController) {
+        oldVC.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    private func configurePersonDetailsPresenterWith(viewController vc: PersonDetailsViewController) {
+        personDetailsPresenter.userInterface = vc
+        personDetailsPresenter.personDetailsWireFrame = self
+        personDetailsPresenter.interactor = personDetailsInteractor
     }
 }
