@@ -13,8 +13,9 @@ end
 
 def networking_pods 
   pod 'Alamofire'
-  pod 'SwiftyJSON'
 end
+
+pod 'SwiftyJSON'
 
 target 'VIPER_Demo' do
   networking_pods

@@ -37,6 +37,7 @@
 		58F635131D8B24440043FCA4 /* PersonDetailsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635121D8B24440043FCA4 /* PersonDetailsDataModel.swift */; };
 		58F635151D8B26220043FCA4 /* PeopleListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635141D8B26220043FCA4 /* PeopleListDataModel.swift */; };
 		58F635231D8B38EA0043FCA4 /* PeopleServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635221D8B38EA0043FCA4 /* PeopleServiceTests.swift */; };
+		58F635251D8B3BBF0043FCA4 /* PeopleTransformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635241D8B3BBF0043FCA4 /* PeopleTransformerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,7 @@
 		58F635121D8B24440043FCA4 /* PersonDetailsDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsDataModel.swift; sourceTree = "<group>"; };
 		58F635141D8B26220043FCA4 /* PeopleListDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListDataModel.swift; sourceTree = "<group>"; };
 		58F635221D8B38EA0043FCA4 /* PeopleServiceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleServiceTests.swift; sourceTree = "<group>"; };
+		58F635241D8B3BBF0043FCA4 /* PeopleTransformerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleTransformerTests.swift; sourceTree = "<group>"; };
 		5F60D7A9FFE18D28BC7A578D /* Pods_VIPER_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90DD7CDAC0FA1E470F6EFF34 /* Pods-VIPER_DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER_DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER_DemoTests/Pods-VIPER_DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E397B0817E3353A2BDA5911 /* Pods-VIPER_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER_Demo/Pods-VIPER_Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				58F635221D8B38EA0043FCA4 /* PeopleServiceTests.swift */,
+				58F635241D8B3BBF0043FCA4 /* PeopleTransformerTests.swift */,
 			);
 			path = ServicesTests;
 			sourceTree = "<group>";
@@ -605,6 +608,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F635251D8B3BBF0043FCA4 /* PeopleTransformerTests.swift in Sources */,
 				58F635231D8B38EA0043FCA4 /* PeopleServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
