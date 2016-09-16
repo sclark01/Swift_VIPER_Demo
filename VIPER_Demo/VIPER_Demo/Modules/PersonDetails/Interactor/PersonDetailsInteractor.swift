@@ -1,11 +1,11 @@
 import Foundation
 
-protocol PersonDetailsInteractorType {
+protocol PersonDetailsInteractorType : PersonDetailsInteractorInput {
     var output: PersonDetailsPresenterType { get }
     var service: PeopleServiceType { get }
 }
 
-class PersonDetailsInteractor : PersonDetailsInteractorType, PersonDetailsInteractorInput {
+class PersonDetailsInteractor : PersonDetailsInteractorType {
     let output: PersonDetailsPresenterType
     let service: PeopleServiceType
 

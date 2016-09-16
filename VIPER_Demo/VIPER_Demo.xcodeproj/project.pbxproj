@@ -44,6 +44,9 @@
 		58F6352F1D8B4CA10043FCA4 /* TestablePersonDetailsWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6352E1D8B4CA10043FCA4 /* TestablePersonDetailsWireFrame.swift */; };
 		58F635311D8B4D9D0043FCA4 /* PersonDetailsInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635301D8B4D9D0043FCA4 /* PersonDetailsInteractorMock.swift */; };
 		58F635331D8B4E1E0043FCA4 /* PeopleServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635321D8B4E1E0043FCA4 /* PeopleServiceMock.swift */; };
+		58F635351D8B676E0043FCA4 /* PersonDetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635341D8B676E0043FCA4 /* PersonDetailsPresenterTests.swift */; };
+		58F635371D8B6BFC0043FCA4 /* PersonDetailsViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635361D8B6BFC0043FCA4 /* PersonDetailsViewMock.swift */; };
+		58F635391D8B6DE20043FCA4 /* PersonDetailsDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F635381D8B6DE20043FCA4 /* PersonDetailsDataModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +101,9 @@
 		58F6352E1D8B4CA10043FCA4 /* TestablePersonDetailsWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestablePersonDetailsWireFrame.swift; path = VIPER_DemoTests/ModulesTests/PersonDetailsTests/TestablePersonDetailsWireFrame.swift; sourceTree = SOURCE_ROOT; };
 		58F635301D8B4D9D0043FCA4 /* PersonDetailsInteractorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonDetailsInteractorMock.swift; path = VIPER_DemoTests/ModulesTests/PersonDetailsTests/Mocks/PersonDetailsInteractorMock.swift; sourceTree = SOURCE_ROOT; };
 		58F635321D8B4E1E0043FCA4 /* PeopleServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleServiceMock.swift; sourceTree = "<group>"; };
+		58F635341D8B676E0043FCA4 /* PersonDetailsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonDetailsPresenterTests.swift; path = VIPER_DemoTests/ModulesTests/PersonDetailsTests/PresenterTests/PersonDetailsPresenterTests.swift; sourceTree = SOURCE_ROOT; };
+		58F635361D8B6BFC0043FCA4 /* PersonDetailsViewMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonDetailsViewMock.swift; path = VIPER_DemoTests/ModulesTests/PersonDetailsTests/Mocks/PersonDetailsViewMock.swift; sourceTree = SOURCE_ROOT; };
+		58F635381D8B6DE20043FCA4 /* PersonDetailsDataModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonDetailsDataModelTests.swift; path = VIPER_DemoTests/ModulesTests/PersonDetailsTests/PresenterTests/PersonDetailsDataModelTests.swift; sourceTree = SOURCE_ROOT; };
 		5F60D7A9FFE18D28BC7A578D /* Pods_VIPER_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90DD7CDAC0FA1E470F6EFF34 /* Pods-VIPER_DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER_DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER_DemoTests/Pods-VIPER_DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E397B0817E3353A2BDA5911 /* Pods-VIPER_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER_Demo/Pods-VIPER_Demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -334,6 +340,8 @@
 		58F6351C1D8B380E0043FCA4 /* PresenterTests */ = {
 			isa = PBXGroup;
 			children = (
+				58F635341D8B676E0043FCA4 /* PersonDetailsPresenterTests.swift */,
+				58F635381D8B6DE20043FCA4 /* PersonDetailsDataModelTests.swift */,
 			);
 			path = PresenterTests;
 			sourceTree = "<group>";
@@ -379,6 +387,7 @@
 			children = (
 				58F6352C1D8B4B6B0043FCA4 /* PersonDetailsPresenterMock.swift */,
 				58F635301D8B4D9D0043FCA4 /* PersonDetailsInteractorMock.swift */,
+				58F635361D8B6BFC0043FCA4 /* PersonDetailsViewMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -634,13 +643,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F635391D8B6DE20043FCA4 /* PersonDetailsDataModelTests.swift in Sources */,
 				58F635251D8B3BBF0043FCA4 /* PeopleTransformerTests.swift in Sources */,
 				58F635271D8B490C0043FCA4 /* PersonTests.swift in Sources */,
 				58F635331D8B4E1E0043FCA4 /* PeopleServiceMock.swift in Sources */,
 				58F635311D8B4D9D0043FCA4 /* PersonDetailsInteractorMock.swift in Sources */,
+				58F635371D8B6BFC0043FCA4 /* PersonDetailsViewMock.swift in Sources */,
 				58F6352D1D8B4B6B0043FCA4 /* PersonDetailsPresenterMock.swift in Sources */,
 				58F635291D8B4A890043FCA4 /* PersonDetailsWireFrameTests.swift in Sources */,
 				58F6352F1D8B4CA10043FCA4 /* TestablePersonDetailsWireFrame.swift in Sources */,
+				58F635351D8B676E0043FCA4 /* PersonDetailsPresenterTests.swift in Sources */,
 				58F635231D8B38EA0043FCA4 /* PeopleServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
