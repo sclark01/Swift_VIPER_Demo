@@ -8,9 +8,10 @@ class PersonDetailsPresenterMock : PersonDetailsPresenterType {
     var interactor: PersonDetailsInteractorType?
 
     var gotPerson: Person?
+    var didUpdateViewForId: Int?
 
     func updateViewFor(id id: Int) {
-
+        didUpdateViewForId = id 
     }
 
     func got(person person: Person) {

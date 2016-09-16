@@ -6,9 +6,7 @@ class PersonDetailsViewController : UIViewController {
     var personId: Int? {
         didSet {
             if let id = personId {
-                if let eventHandler = eventHandler as? PersonDetailsPresenter {
-                    eventHandler.updateViewFor(id: id)
-                }
+                eventHandler?.updateViewFor(id: id)
             }
         }
     }
