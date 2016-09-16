@@ -16,9 +16,7 @@ class PersonDetailsInteractor : PersonDetailsInteractorType {
 
     func getPersonBy(id id: Int) {
         service.getPersonByID(withID: id) { [weak self] person in
-            guard let strongSelf = self,
-            output = strongSelf.output as? PersonDetailsPresenter else { return }
-            output.got(person: person)
+            self?.output.got(person: person)
         }
     }
 }
