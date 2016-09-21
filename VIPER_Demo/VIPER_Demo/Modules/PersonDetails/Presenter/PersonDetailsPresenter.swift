@@ -15,7 +15,7 @@ class PersonDetailsPresenter : PersonDetailsPresenterType {
         interactor?.getPersonBy(id: id)
     }
 
-    func got(person person: Person) {
+    func got(person person: PersonData) {
         userInterface?.display(PersonDetailsDataModel(person: person))
     }
 

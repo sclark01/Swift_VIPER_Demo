@@ -16,9 +16,10 @@ class PeopleListInteractor : PeopleListInteractorType {
 
     func getPeople() {
         service.getPeople { [weak self] people in
-            guard let strongSelf = self,
-                output = strongSelf.output as? PeopleListPresenter else { return }
-            output.gotPeople(people: people)
+            let peopleList = people.map {
+                PersonForListData(person: $0)
+            }
+            self?.output.gotPeople(people: peopleList)
         }
     }
 }

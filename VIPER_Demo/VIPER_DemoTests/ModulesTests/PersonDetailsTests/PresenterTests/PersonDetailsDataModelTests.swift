@@ -10,7 +10,7 @@ class PersonDetailsDataModelTests : QuickSpec {
             var dataModel: PersonDetailsDataModel!
 
             beforeEach {
-                let person = Person(id: 1, name: "someName", phone: "somePhone", age: "someAge")
+                let person = PersonData(person: Person(id: 1, name: "someName", phone: "somePhone", age: "someAge"))
                 dataModel = PersonDetailsDataModel(person: person)
             }
 
@@ -33,7 +33,7 @@ class PersonDetailsDataModelTests : QuickSpec {
             }
 
             it("should be equal to another data model if it's the same person") {
-                let samePerson = Person(id: 2, name: "sameName", phone: "samePhone", age: "sameAge")
+                let samePerson = PersonData(person: Person(id: 2, name: "sameName", phone: "samePhone", age: "sameAge"))
                 let dataModel1 = PersonDetailsDataModel(person: samePerson)
                 let dataModel2 = PersonDetailsDataModel(person: samePerson)
 
@@ -41,8 +41,8 @@ class PersonDetailsDataModelTests : QuickSpec {
             }
 
             it("should not be equal to another data model if it's not the same person") {
-                let aPerson = Person(id: 2, name: "sameName", phone: "samePhone", age: "sameAge")
-                let aDifferentPerson = Person(id: 1, name: "difName", phone: "difPhone", age: "difAge")
+                let aPerson = PersonData(person: Person(id: 2, name: "sameName", phone: "samePhone", age: "sameAge"))
+                let aDifferentPerson = PersonData(person: Person(id: 1, name: "difName", phone: "difPhone", age: "difAge"))
                 let dataModel1 = PersonDetailsDataModel(person: aPerson)
                 let dataModel2 = PersonDetailsDataModel(person: aDifferentPerson)
 

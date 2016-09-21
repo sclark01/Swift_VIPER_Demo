@@ -28,10 +28,12 @@ class PersonDetailsInteractorTests : QuickSpec {
                 expect(mockService!.getPersonByIdCallWithId) == id
             }
 
-            it("should call the presenter on success") {
+            it("should call the presenter on success with correct personData") {
                 interactor!.getPersonBy(id: id)
 
-                expect(mockPresenter?.gotPerson).toEventually(equal(person))
+                let expectedPersonData = PersonData(person: person)
+
+                expect(mockPresenter?.gotPerson).toEventually(equal(expectedPersonData))
             }
         }
     }

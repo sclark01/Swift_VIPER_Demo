@@ -16,7 +16,7 @@ class PeopleListPresenter : PeopleListPresenterType {
         interactor.getPeople()
     }
 
-    func gotPeople(people people: [Person]) {
+    func gotPeople(people people: [PersonForListData]) {
         userInterface?.set(PeopleListDataModel(people: people))
     }
 

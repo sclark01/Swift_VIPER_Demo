@@ -16,7 +16,7 @@ class PersonDetailsInteractor : PersonDetailsInteractorType {
 
     func getPersonBy(id id: Int) {
         service.getPersonByID(withID: id) { [weak self] person in
-            self?.output.got(person: person)
+            self?.output.got(person: PersonData(person: person))
         }
     }
 }

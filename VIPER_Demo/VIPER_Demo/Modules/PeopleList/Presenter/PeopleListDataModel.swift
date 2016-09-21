@@ -1,9 +1,9 @@
 import Foundation
 
 struct PeopleListDataModel {
-    private let people: [Person]
+    private let people: [PersonForListData]
 
-    init(people: [Person]) {
+    init(people: [PersonForListData]) {
         self.people = people
     }
 
@@ -15,13 +15,13 @@ struct PeopleListDataModel {
         return people.count
     }
 
-    func personAt(index i: Int) -> PersonForListDataModel{
+    func personAt(index i: Int) -> PersonForListDataModel {
         return PersonForListDataModel(person: people[i])
     }
 }
 
 struct PersonForListDataModel {
-    private let person: Person
+    private let person: PersonForListData
 
     var name: String {
         return person.name

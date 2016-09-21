@@ -24,7 +24,7 @@ class PersonDetailsViewControllerTests : QuickSpec {
                 let vc = storyBoard.instantiateInitialViewController() as! PersonDetailsViewController
                 let _ = vc.view
 
-                let person = PersonDetailsDataModel(person: Person(id: 1, name: "someName", phone: "somePhone", age: "someAge"))
+                let person = PersonDetailsDataModel(person: PersonData(person: Person(id: 1, name: "someName", phone: "somePhone", age: "someAge")))
 
                 vc.display(person)
 

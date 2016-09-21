@@ -30,10 +30,10 @@ class PersonDetailsPresenterTests : QuickSpec {
             }
 
             it("should notify UI when a person is found") {
-                let person = Person(id: 1, name: "aName", phone: "aPhone", age: "anAge")
-                let expectedPerson = PersonDetailsDataModel(person: person)
+                let personData = PersonData(person: Person(id: 1, name: "aName", phone: "aPhone", age: "anAge"))
+                let expectedPerson = PersonDetailsDataModel(person: personData)
 
-                presenter.got(person: person)
+                presenter.got(person: personData)
 
                 expect(mockUI.calledDisplayWithPerson).toNot(beNil())
                 expect(mockUI.calledDisplayWithPerson) == expectedPerson
