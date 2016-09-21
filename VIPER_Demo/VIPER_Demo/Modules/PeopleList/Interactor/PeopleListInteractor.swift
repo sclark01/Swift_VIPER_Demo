@@ -1,11 +1,11 @@
 import Foundation
 
-protocol PeopleListInteractorType {
+protocol PeopleListInteractorType : PeopleListInteractorInput {
     var output: PeopleListPresenterType { get }
     var service: PeopleServiceType { get }
 }
 
-class PeopleListInteractor : PeopleListInteractorType, PeopleListInteractorInput {
+class PeopleListInteractor : PeopleListInteractorType {
     let output: PeopleListPresenterType
     let service: PeopleServiceType
 

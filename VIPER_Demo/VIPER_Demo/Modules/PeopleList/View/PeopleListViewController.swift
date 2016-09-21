@@ -2,21 +2,19 @@ import UIKit
 
 class PeopleListViewController : UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    var eventHandler: PeopleListPresenterType!
 
+    var eventHandler: PeopleListPresenterType?
     private var peopleList: PeopleListDataModel?
 
     override func viewDidLoad() {
-        if let eventHandler = eventHandler as? PeopleListPresenter {
-            eventHandler.updateView()
-        }
+        eventHandler?.updateView()
         navigationItem.title = "Contacts"
     }
 }
 
 extension PeopleListViewController : PeopleListViewType {
-    func set(people: [Person]) {
-        self.peopleList = PeopleListDataModel(people: people)
+    func set(people: PeopleListDataModel) {
+        self.peopleList = people 
         tableView.reloadData()
     }
 }
@@ -44,9 +42,8 @@ extension PeopleListViewController : UITableViewDataSource {
 
 extension PeopleListViewController : UITableViewDelegate {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if let person = peopleList?.personAt(index: indexPath.row),
-           let eventHandler = eventHandler as? PeopleListPresenter {
-            eventHandler.detailsForPerson(withId: person.id)
+        if let person = peopleList?.personAt(index: indexPath.row) {
+            eventHandler?.detailsForPerson(withId: person.id)
         }
     }
 }

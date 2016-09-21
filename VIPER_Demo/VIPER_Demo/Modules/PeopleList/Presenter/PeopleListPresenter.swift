@@ -1,12 +1,12 @@
 import Foundation
 
-protocol PeopleListPresenterType {
+protocol PeopleListPresenterType : PeopleListInteractorOutput, PeopleListModuleInterface {
     var userInterface: PeopleListViewType? { get set }
     var interactor: PeopleListInteractorType? { get set }
     var peopleListWireFrame: PeopleListWireFrame? { get set }
 }
 
-class PeopleListPresenter : PeopleListPresenterType, PeopleListInteractorOutput, PeopleListModuleInterface {
+class PeopleListPresenter : PeopleListPresenterType {
     var userInterface: PeopleListViewType?
     var interactor: PeopleListInteractorType?
     var peopleListWireFrame: PeopleListWireFrame?
@@ -17,7 +17,7 @@ class PeopleListPresenter : PeopleListPresenterType, PeopleListInteractorOutput,
     }
 
     func gotPeople(people people: [Person]) {
-        userInterface?.set(people)
+        userInterface?.set(PeopleListDataModel(people: people))
     }
 
     func detailsForPerson(withId Id: Int) {
