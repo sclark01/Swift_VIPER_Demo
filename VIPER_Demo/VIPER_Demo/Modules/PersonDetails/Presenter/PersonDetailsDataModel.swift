@@ -1,9 +1,9 @@
 import Foundation
 
 struct PersonDetailsDataModel {
-    private let person: PersonData
+    private let person: PersonDetailsData
 
-    init(person: PersonData) {
+    init(person: PersonDetailsData) {
         self.person = person
     }
 

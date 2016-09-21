@@ -30,7 +30,7 @@ class PersonDetailsPresenterTests : QuickSpec {
             }
 
             it("should notify UI when a person is found") {
-                let personData = PersonData(person: Person(id: 1, name: "aName", phone: "aPhone", age: "anAge"))
+                let personData = PersonDetailsData(person: Person(id: 1, name: "aName", phone: "aPhone", age: "anAge"))
                 let expectedPerson = PersonDetailsDataModel(person: personData)
 
                 presenter.got(person: personData)

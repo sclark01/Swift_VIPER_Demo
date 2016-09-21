@@ -5,5 +5,5 @@ protocol PersonDetailsInteractorInput {
 }
 
 protocol PersonDetailsInteractorOutput {
-    func got(person person: PersonData)
+    func got(person person: PersonDetailsData)
 }

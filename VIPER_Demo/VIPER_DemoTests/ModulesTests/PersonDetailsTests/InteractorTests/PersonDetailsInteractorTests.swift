@@ -31,7 +31,7 @@ class PersonDetailsInteractorTests : QuickSpec {
             it("should call the presenter on success with correct personData") {
                 interactor!.getPersonBy(id: id)
 
-                let expectedPersonData = PersonData(person: person)
+                let expectedPersonData = PersonDetailsData(person: person)
 
                 expect(mockPresenter?.gotPerson).toEventually(equal(expectedPersonData))
             }

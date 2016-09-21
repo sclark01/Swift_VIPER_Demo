@@ -32,7 +32,7 @@
 		584F22B71D89EFAD00722C1D /* PeopleListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584F22B61D89EFAD00722C1D /* PeopleListPresenter.swift */; };
 		584F22BB1D89F03200722C1D /* PeopleListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584F22B91D89F03200722C1D /* PeopleListInteractor.swift */; };
 		584F22BC1D89F03200722C1D /* PeopleListInteractorIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584F22BA1D89F03200722C1D /* PeopleListInteractorIO.swift */; };
-		586C13D31D932D0B006F8F67 /* PersonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13D21D932D0B006F8F67 /* PersonData.swift */; };
+		586C13D31D932D0B006F8F67 /* PersonDetailsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13D21D932D0B006F8F67 /* PersonDetailsData.swift */; };
 		586C13D51D932F2B006F8F67 /* PersonDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13D41D932F2B006F8F67 /* PersonDataTests.swift */; };
 		586C13D71D9332C5006F8F67 /* PersonForListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13D61D9332C5006F8F67 /* PersonForListData.swift */; };
 		58F6350B1D8B16DF0043FCA4 /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6350A1D8B16DF0043FCA4 /* PersonDetailsView.swift */; };
@@ -94,7 +94,7 @@
 		584F22B61D89EFAD00722C1D /* PeopleListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListPresenter.swift; sourceTree = "<group>"; };
 		584F22B91D89F03200722C1D /* PeopleListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListInteractor.swift; sourceTree = "<group>"; };
 		584F22BA1D89F03200722C1D /* PeopleListInteractorIO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleListInteractorIO.swift; sourceTree = "<group>"; };
-		586C13D21D932D0B006F8F67 /* PersonData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonData.swift; sourceTree = "<group>"; };
+		586C13D21D932D0B006F8F67 /* PersonDetailsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsData.swift; sourceTree = "<group>"; };
 		586C13D41D932F2B006F8F67 /* PersonDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonDataTests.swift; path = VIPER_DemoTests/ModulesTests/PersonDetailsTests/InteractorTests/PersonDataTests.swift; sourceTree = SOURCE_ROOT; };
 		586C13D61D9332C5006F8F67 /* PersonForListData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonForListData.swift; sourceTree = "<group>"; };
 		58F6350A1D8B16DF0043FCA4 /* PersonDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
@@ -263,7 +263,7 @@
 			children = (
 				58F6350E1D8B199E0043FCA4 /* PersonDetailsInteractor.swift */,
 				58F635101D8B19B90043FCA4 /* PersonDetailsInteractorIO.swift */,
-				586C13D21D932D0B006F8F67 /* PersonData.swift */,
+				586C13D21D932D0B006F8F67 /* PersonDetailsData.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -643,7 +643,7 @@
 				583D963F1D89FC080017FB0B /* PersonDetailsWireFrame.swift in Sources */,
 				58F635131D8B24440043FCA4 /* PersonDetailsDataModel.swift in Sources */,
 				583D964A1D8A01260017FB0B /* PersonDetailsViewController.swift in Sources */,
-				586C13D31D932D0B006F8F67 /* PersonData.swift in Sources */,
+				586C13D31D932D0B006F8F67 /* PersonDetailsData.swift in Sources */,
 				584F22B71D89EFAD00722C1D /* PeopleListPresenter.swift in Sources */,
 				5815521B1D88A1E4009349E2 /* Person.swift in Sources */,
 				58F6350B1D8B16DF0043FCA4 /* PersonDetailsView.swift in Sources */,

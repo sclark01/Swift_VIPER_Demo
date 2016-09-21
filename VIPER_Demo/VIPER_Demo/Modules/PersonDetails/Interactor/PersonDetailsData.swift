@@ -1,6 +1,6 @@
 import Foundation
 
-struct PersonData {
+struct PersonDetailsData {
     let name: String
     let age: String
     let phone: String
@@ -12,9 +12,9 @@ struct PersonData {
     }
 }
 
-extension PersonData : Equatable {}
+extension PersonDetailsData : Equatable {}
 
-func ==(lhs: PersonData, rhs: PersonData) -> Bool {
+func ==(lhs: PersonDetailsData, rhs: PersonDetailsData) -> Bool {
     return lhs.name == rhs.name &&
         lhs.age == rhs.age &&
         lhs.phone == rhs.phone

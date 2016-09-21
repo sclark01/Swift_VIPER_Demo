@@ -7,14 +7,14 @@ class PersonDetailsPresenterMock : PersonDetailsPresenterType {
     var userInterface: PersonDetailsView?
     var interactor: PersonDetailsInteractorType?
 
-    var gotPerson: PersonData?
+    var gotPerson: PersonDetailsData?
     var didUpdateViewForId: Int?
 
     func updateViewFor(id id: Int) {
         didUpdateViewForId = id 
     }
 
-    func got(person person: PersonData) {
+    func got(person person: PersonDetailsData) {
         gotPerson = person
     }
 }
