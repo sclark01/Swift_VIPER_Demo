@@ -12,8 +12,7 @@ class PeopleListPresenter : PeopleListPresenterType {
     var peopleListWireFrame: PeopleListWireFrame?
 
     func updateView() {
-        guard let interactor = interactor as? PeopleListInteractor else { return }
-        interactor.getPeople()
+        interactor?.getPeople()
     }
 
     func gotPeople(people people: [PersonForListData]) {

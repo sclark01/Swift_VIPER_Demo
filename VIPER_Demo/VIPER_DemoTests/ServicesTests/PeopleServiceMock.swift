@@ -6,9 +6,11 @@ class PeopleServiceMock : PeopleServiceType {
     var getPersonByIdCallWithId: Int?
 
     var returnWithPerson: Person?
+    var getPeopleCalled = false
 
     func getPeople(onCompletion: ([Person]) -> Void) {
-
+        getPeopleCalled = true
+        onCompletion([returnWithPerson!])
     }
 
     func getPersonByID(withID id: Int, onCompletion: (Person) -> Void) {

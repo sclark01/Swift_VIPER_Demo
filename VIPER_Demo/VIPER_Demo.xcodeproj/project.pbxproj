@@ -35,6 +35,18 @@
 		586C13D31D932D0B006F8F67 /* PersonDetailsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13D21D932D0B006F8F67 /* PersonDetailsData.swift */; };
 		586C13D51D932F2B006F8F67 /* PersonDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13D41D932F2B006F8F67 /* PersonDataTests.swift */; };
 		586C13D71D9332C5006F8F67 /* PersonForListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13D61D9332C5006F8F67 /* PersonForListData.swift */; };
+		586C13D91D9336D1006F8F67 /* PeopleListWireFrameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13D81D9336D1006F8F67 /* PeopleListWireFrameTests.swift */; };
+		586C13DC1D933774006F8F67 /* MainWireFrameMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13DB1D933774006F8F67 /* MainWireFrameMock.swift */; };
+		586C13DE1D933843006F8F67 /* PeopleListPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13DD1D933843006F8F67 /* PeopleListPresenterMock.swift */; };
+		586C13E01D9338C8006F8F67 /* PeopleListInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13DF1D9338C8006F8F67 /* PeopleListInteractorMock.swift */; };
+		586C13E41D933DB8006F8F67 /* PeopleListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13E31D933DB8006F8F67 /* PeopleListPresenterTests.swift */; };
+		586C13E61D934050006F8F67 /* PeopleListViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13E51D934050006F8F67 /* PeopleListViewMock.swift */; };
+		586C13E81D934197006F8F67 /* PeopleListDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13E71D934197006F8F67 /* PeopleListDataModelTests.swift */; };
+		586C13EC1D934E29006F8F67 /* PersonDetailsWireFrameMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13EB1D934E29006F8F67 /* PersonDetailsWireFrameMock.swift */; };
+		586C13EE1D934E6C006F8F67 /* PeopleListWireFrameMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13ED1D934E6C006F8F67 /* PeopleListWireFrameMock.swift */; };
+		586C13F01D934FBB006F8F67 /* PeopleListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13EF1D934FBB006F8F67 /* PeopleListInteractorTests.swift */; };
+		586C13F21D9353B5006F8F67 /* PersonForListDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13F11D9353B5006F8F67 /* PersonForListDataTests.swift */; };
+		586C13F41D9355BC006F8F67 /* PeopleListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C13F31D9355BC006F8F67 /* PeopleListViewControllerTests.swift */; };
 		58F6350B1D8B16DF0043FCA4 /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6350A1D8B16DF0043FCA4 /* PersonDetailsView.swift */; };
 		58F6350D1D8B18AB0043FCA4 /* PersonDetailsModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6350C1D8B18AB0043FCA4 /* PersonDetailsModuleInterface.swift */; };
 		58F6350F1D8B199E0043FCA4 /* PersonDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F6350E1D8B199E0043FCA4 /* PersonDetailsInteractor.swift */; };
@@ -97,6 +109,18 @@
 		586C13D21D932D0B006F8F67 /* PersonDetailsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsData.swift; sourceTree = "<group>"; };
 		586C13D41D932F2B006F8F67 /* PersonDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonDataTests.swift; path = VIPER_DemoTests/ModulesTests/PersonDetailsTests/InteractorTests/PersonDataTests.swift; sourceTree = SOURCE_ROOT; };
 		586C13D61D9332C5006F8F67 /* PersonForListData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonForListData.swift; sourceTree = "<group>"; };
+		586C13D81D9336D1006F8F67 /* PeopleListWireFrameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleListWireFrameTests.swift; path = VIPER_DemoTests/ModulesTests/PeopleListTests/PeopleListWireFrameTests.swift; sourceTree = SOURCE_ROOT; };
+		586C13DB1D933774006F8F67 /* MainWireFrameMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainWireFrameMock.swift; path = VIPER_DemoTests/ModulesTests/PeopleListTests/Mocks/MainWireFrameMock.swift; sourceTree = SOURCE_ROOT; };
+		586C13DD1D933843006F8F67 /* PeopleListPresenterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleListPresenterMock.swift; path = VIPER_DemoTests/ModulesTests/PeopleListTests/Mocks/PeopleListPresenterMock.swift; sourceTree = SOURCE_ROOT; };
+		586C13DF1D9338C8006F8F67 /* PeopleListInteractorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleListInteractorMock.swift; path = VIPER_DemoTests/ModulesTests/PeopleListTests/Mocks/PeopleListInteractorMock.swift; sourceTree = SOURCE_ROOT; };
+		586C13E31D933DB8006F8F67 /* PeopleListPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleListPresenterTests.swift; path = VIPER_DemoTests/ModulesTests/PeopleListTests/PresenterTests/PeopleListPresenterTests.swift; sourceTree = SOURCE_ROOT; };
+		586C13E51D934050006F8F67 /* PeopleListViewMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleListViewMock.swift; path = VIPER_DemoTests/ModulesTests/PeopleListTests/Mocks/PeopleListViewMock.swift; sourceTree = SOURCE_ROOT; };
+		586C13E71D934197006F8F67 /* PeopleListDataModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleListDataModelTests.swift; path = VIPER_DemoTests/ModulesTests/PeopleListTests/PresenterTests/PeopleListDataModelTests.swift; sourceTree = SOURCE_ROOT; };
+		586C13EB1D934E29006F8F67 /* PersonDetailsWireFrameMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonDetailsWireFrameMock.swift; path = VIPER_DemoTests/ModulesTests/PersonDetailsTests/Mocks/PersonDetailsWireFrameMock.swift; sourceTree = SOURCE_ROOT; };
+		586C13ED1D934E6C006F8F67 /* PeopleListWireFrameMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleListWireFrameMock.swift; path = VIPER_DemoTests/ModulesTests/PeopleListTests/Mocks/PeopleListWireFrameMock.swift; sourceTree = SOURCE_ROOT; };
+		586C13EF1D934FBB006F8F67 /* PeopleListInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleListInteractorTests.swift; path = VIPER_DemoTests/ModulesTests/PeopleListTests/InteractorTests/PeopleListInteractorTests.swift; sourceTree = SOURCE_ROOT; };
+		586C13F11D9353B5006F8F67 /* PersonForListDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonForListDataTests.swift; path = VIPER_DemoTests/ModulesTests/PeopleListTests/InteractorTests/PersonForListDataTests.swift; sourceTree = SOURCE_ROOT; };
+		586C13F31D9355BC006F8F67 /* PeopleListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PeopleListViewControllerTests.swift; path = VIPER_DemoTests/ModulesTests/PeopleListTests/ViewTests/PeopleListViewControllerTests.swift; sourceTree = SOURCE_ROOT; };
 		58F6350A1D8B16DF0043FCA4 /* PersonDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
 		58F6350C1D8B18AB0043FCA4 /* PersonDetailsModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsModuleInterface.swift; sourceTree = "<group>"; };
 		58F6350E1D8B199E0043FCA4 /* PersonDetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailsInteractor.swift; sourceTree = "<group>"; };
@@ -296,6 +320,18 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		586C13DA1D933754006F8F67 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				586C13ED1D934E6C006F8F67 /* PeopleListWireFrameMock.swift */,
+				586C13DB1D933774006F8F67 /* MainWireFrameMock.swift */,
+				586C13DD1D933843006F8F67 /* PeopleListPresenterMock.swift */,
+				586C13DF1D9338C8006F8F67 /* PeopleListInteractorMock.swift */,
+				586C13E51D934050006F8F67 /* PeopleListViewMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		58F635161D8B37170043FCA4 /* EntitiesTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -341,9 +377,11 @@
 		58F6351B1D8B37DC0043FCA4 /* PeopleListTests */ = {
 			isa = PBXGroup;
 			children = (
+				586C13DA1D933754006F8F67 /* Mocks */,
 				58F635211D8B388B0043FCA4 /* PresenterTests */,
 				58F635201D8B38780043FCA4 /* InteractorTests */,
 				58F6351F1D8B38650043FCA4 /* ViewTests */,
+				586C13D81D9336D1006F8F67 /* PeopleListWireFrameTests.swift */,
 			);
 			name = PeopleListTests;
 			path = VIPER_DemoTests/ModulesTests/PeopleListTests;
@@ -379,6 +417,7 @@
 		58F6351F1D8B38650043FCA4 /* ViewTests */ = {
 			isa = PBXGroup;
 			children = (
+				586C13F31D9355BC006F8F67 /* PeopleListViewControllerTests.swift */,
 			);
 			path = ViewTests;
 			sourceTree = "<group>";
@@ -386,6 +425,8 @@
 		58F635201D8B38780043FCA4 /* InteractorTests */ = {
 			isa = PBXGroup;
 			children = (
+				586C13EF1D934FBB006F8F67 /* PeopleListInteractorTests.swift */,
+				586C13F11D9353B5006F8F67 /* PersonForListDataTests.swift */,
 			);
 			path = InteractorTests;
 			sourceTree = "<group>";
@@ -393,6 +434,8 @@
 		58F635211D8B388B0043FCA4 /* PresenterTests */ = {
 			isa = PBXGroup;
 			children = (
+				586C13E31D933DB8006F8F67 /* PeopleListPresenterTests.swift */,
+				586C13E71D934197006F8F67 /* PeopleListDataModelTests.swift */,
 			);
 			path = PresenterTests;
 			sourceTree = "<group>";
@@ -400,6 +443,7 @@
 		58F6352B1D8B4B530043FCA4 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				586C13EB1D934E29006F8F67 /* PersonDetailsWireFrameMock.swift */,
 				58F6352C1D8B4B6B0043FCA4 /* PersonDetailsPresenterMock.swift */,
 				58F635301D8B4D9D0043FCA4 /* PersonDetailsInteractorMock.swift */,
 				58F635361D8B6BFC0043FCA4 /* PersonDetailsViewMock.swift */,
@@ -660,15 +704,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				586C13E61D934050006F8F67 /* PeopleListViewMock.swift in Sources */,
 				58F635391D8B6DE20043FCA4 /* PersonDetailsDataModelTests.swift in Sources */,
+				586C13E41D933DB8006F8F67 /* PeopleListPresenterTests.swift in Sources */,
 				58F635251D8B3BBF0043FCA4 /* PeopleTransformerTests.swift in Sources */,
+				586C13EE1D934E6C006F8F67 /* PeopleListWireFrameMock.swift in Sources */,
+				586C13EC1D934E29006F8F67 /* PersonDetailsWireFrameMock.swift in Sources */,
 				58F635271D8B490C0043FCA4 /* PersonTests.swift in Sources */,
+				586C13DC1D933774006F8F67 /* MainWireFrameMock.swift in Sources */,
 				58F635331D8B4E1E0043FCA4 /* PeopleServiceMock.swift in Sources */,
 				5829A8571D8C871A000DC559 /* PersonDetailsViewControllerTests.swift in Sources */,
+				586C13DE1D933843006F8F67 /* PeopleListPresenterMock.swift in Sources */,
+				586C13E01D9338C8006F8F67 /* PeopleListInteractorMock.swift in Sources */,
 				5829A8551D8C6F79000DC559 /* PersonDetailsInteractorTests.swift in Sources */,
+				586C13F41D9355BC006F8F67 /* PeopleListViewControllerTests.swift in Sources */,
 				58F635311D8B4D9D0043FCA4 /* PersonDetailsInteractorMock.swift in Sources */,
+				586C13E81D934197006F8F67 /* PeopleListDataModelTests.swift in Sources */,
 				58F635371D8B6BFC0043FCA4 /* PersonDetailsViewMock.swift in Sources */,
 				58F6352D1D8B4B6B0043FCA4 /* PersonDetailsPresenterMock.swift in Sources */,
+				586C13F01D934FBB006F8F67 /* PeopleListInteractorTests.swift in Sources */,
+				586C13D91D9336D1006F8F67 /* PeopleListWireFrameTests.swift in Sources */,
+				586C13F21D9353B5006F8F67 /* PersonForListDataTests.swift in Sources */,
 				58F635291D8B4A890043FCA4 /* PersonDetailsWireFrameTests.swift in Sources */,
 				58F6352F1D8B4CA10043FCA4 /* TestablePersonDetailsWireFrame.swift in Sources */,
 				58F635351D8B676E0043FCA4 /* PersonDetailsPresenterTests.swift in Sources */,
