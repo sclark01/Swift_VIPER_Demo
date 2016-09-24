@@ -41,7 +41,9 @@ For most projects VIPER is probably overkill. It's definitely not an architectur
 
 #### 1. Install Xcode
 * Download Xcode 8  
+
 #### 2. Install CocoaPods
+
 ##### Without latest ruby installed:
 * Install rbenv if you do not have it already: `brew install rbenv`
 * Install most recent, stable version of ruby using rbenv, i.e. `rbenv install 2.3.1` 
