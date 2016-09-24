@@ -14,10 +14,14 @@ class PersonDetailsViewController : UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var ageLabel: UILabel!
+
+    override func viewDidLoad() {
+        navigationItem.title = "Details"
+    }
 }
 
 extension PersonDetailsViewController : PersonDetailsView {
-    func display(person: PersonDetailsDataModel) {
+    func display(_ person: PersonDetailsDataModel) {
         nameLabel.text = person.name
         phoneLabel.text = person.phone
         ageLabel.text = person.age

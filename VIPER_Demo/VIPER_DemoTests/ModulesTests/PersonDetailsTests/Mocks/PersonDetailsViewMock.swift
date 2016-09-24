@@ -5,7 +5,7 @@ import Foundation
 class PersonDetailsViewMock : PersonDetailsView {
     var calledDisplayWithPerson: PersonDetailsDataModel? = nil
 
-    func display(person: PersonDetailsDataModel) {
+    func display(_ person: PersonDetailsDataModel) {
         calledDisplayWithPerson = person
     }
 }

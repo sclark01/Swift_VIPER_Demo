@@ -16,7 +16,7 @@ class PersonDetailsWireFrameTests : QuickSpec {
             it("push the correct viewcontroller") {
                 wireFrame?.presentDetailsViewFrom(viewController: UIViewController(), withId: 1)
 
-                expect(wireFrame?.pushedViewController).to(beAKindOf(PersonDetailsViewController))
+                expect(wireFrame?.pushedViewController).to(beAKindOf(PersonDetailsViewController.self))
             }
 
             it("set the correct person id on the view controller") {

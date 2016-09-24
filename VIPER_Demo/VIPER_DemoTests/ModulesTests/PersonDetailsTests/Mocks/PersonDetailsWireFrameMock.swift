@@ -6,7 +6,7 @@ class PersonDetailsWireFrameMock : PersonDetailsWireFrame {
     var didPresentWithViewController: UIViewController!
     var didPresentWithID: Int!
 
-    override func presentDetailsViewFrom(viewController viewController: UIViewController, withId id: Int) {
+    override func presentDetailsViewFrom(viewController: UIViewController, withId id: Int) {
         didPresentWithViewController = viewController
         didPresentWithID = id
     }

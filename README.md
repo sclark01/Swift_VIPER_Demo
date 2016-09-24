@@ -40,8 +40,7 @@ For most projects VIPER is probably overkill. It's definitely not an architectur
 ## Running the Demo App
 
 #### 1. Install Xcode
-* Download Xcode 7.3
-
+* Download Xcode 8  
 #### 2. Install CocoaPods
 ##### Without latest ruby installed:
 * Install rbenv if you do not have it already: `brew install rbenv`

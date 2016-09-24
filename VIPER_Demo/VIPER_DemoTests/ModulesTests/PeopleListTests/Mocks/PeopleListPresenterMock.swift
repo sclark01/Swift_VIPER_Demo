@@ -18,7 +18,7 @@ class PeopleListPresenterMock : PeopleListPresenterType {
         didCallDetailsForPersonWithID = id 
     }
 
-    func gotPeople(people people: [PersonForListData]) {
+    func gotPeople(people: [PersonForListData]) {
         gotCalledWithPeople = people
     }
 

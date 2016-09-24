@@ -32,13 +32,13 @@ class PeopleListViewControllerTests : QuickSpec {
             }
 
             it("should return the correct cell with label set") {
-                let cell = viewController.tableView(viewController.tableView, cellForRowAtIndexPath: NSIndexPath(forRow: 0, inSection: 0))
+                let cell = viewController.tableView(viewController.tableView, cellForRowAt: IndexPath(row: 0, section: 0))
                 expect(cell.textLabel!.text).toEventually(equal(person.name))
                 expect(cell.detailTextLabel!.text).toEventually(equal("Phone: \(person.phone)"))
             }
 
             it("should notify event handler on selection with corrrect ID") {
-                viewController.tableView(viewController.tableView, didSelectRowAtIndexPath: NSIndexPath(forRow: 0, inSection: 0))
+                viewController.tableView(viewController.tableView, didSelectRowAt: IndexPath(row: 0, section: 0))
 
                 expect(mockPresenter.didCallDetailsForPersonWithID) == person.id
             }

@@ -10,11 +10,11 @@ class PersonDetailsPresenterMock : PersonDetailsPresenterType {
     var gotPerson: PersonDetailsData?
     var didUpdateViewForId: Int?
 
-    func updateViewFor(id id: Int) {
+    func updateViewFor(id: Int) {
         didUpdateViewForId = id 
     }
 
-    func got(person person: PersonDetailsData) {
+    func got(person: PersonDetailsData) {
         gotPerson = person
     }
 }

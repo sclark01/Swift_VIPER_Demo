@@ -1,5 +1,5 @@
 import Foundation
 
 protocol PersonDetailsModuleInterface {
-    func updateViewFor(id id: Int)
+    func updateViewFor(id: Int)
 }

@@ -1,9 +1,9 @@
 import Foundation
 
 protocol PersonDetailsInteractorInput {
-    func getPersonBy(id id: Int)
+    func getPersonBy(id: Int)
 }
 
 protocol PersonDetailsInteractorOutput {
-    func got(person person: PersonDetailsData)
+    func got(person: PersonDetailsData)
 }

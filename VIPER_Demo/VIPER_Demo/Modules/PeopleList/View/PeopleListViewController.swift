@@ -4,7 +4,7 @@ class PeopleListViewController : UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
     var eventHandler: PeopleListPresenterType?
-    private var peopleList: PeopleListDataModel?
+    fileprivate var peopleList: PeopleListDataModel?
 
     override func viewDidLoad() {
         eventHandler?.updateView()
@@ -13,26 +13,26 @@ class PeopleListViewController : UIViewController {
 }
 
 extension PeopleListViewController : PeopleListViewType {
-    func set(people: PeopleListDataModel) {
+    func set(_ people: PeopleListDataModel) {
         self.peopleList = people 
         tableView.reloadData()
     }
 }
 
 extension PeopleListViewController : UITableViewDataSource {
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return peopleList?.sections ?? 1
     }
 
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return peopleList?.rows ?? 0
     }
 
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellID = "person"
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellID) ?? UITableViewCell(style: .Subtitle, reuseIdentifier: cellID)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID) ?? UITableViewCell(style: .subtitle, reuseIdentifier: cellID)
 
-        if let person = peopleList?.personAt(index: indexPath.row) {
+        if let person = peopleList?.personAt(index: (indexPath as NSIndexPath).row) {
             cell.textLabel?.text = person.name
             cell.detailTextLabel?.text = person.phone
         }
@@ -41,8 +41,9 @@ extension PeopleListViewController : UITableViewDataSource {
 }
 
 extension PeopleListViewController : UITableViewDelegate {
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if let person = peopleList?.personAt(index: indexPath.row) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if let person = peopleList?.personAt(index: (indexPath as NSIndexPath).row) {
             eventHandler?.detailsForPerson(withId: person.id)
         }
     }

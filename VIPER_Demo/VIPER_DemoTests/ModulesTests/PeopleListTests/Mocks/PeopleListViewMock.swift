@@ -5,7 +5,7 @@ import Foundation
 class PeopleListViewMock : PeopleListViewType {
     var didSetWithPeople: PeopleListDataModel!
 
-    func set(people: PeopleListDataModel) {
+    func set(_ people: PeopleListDataModel) {
         didSetWithPeople = people
     }
 }

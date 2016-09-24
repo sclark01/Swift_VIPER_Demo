@@ -12,7 +12,7 @@ class PeopleServiceTests : QuickSpec {
         let expectedPerson = Person(id: id, name: "Some Name", phone: "Some Phone", age: "someAge")
 
         beforeEach {
-            stub(isHost("localhost") && isPath("/listAll") && isMethodGET()) { request in
+            let _ = stub(condition: isHost("localhost") && isPath("/listAll") && isMethodGET()) { request in
                 let obj = [[
                     "id" : expectedPerson.id,
                     "name" : expectedPerson.name,
@@ -25,17 +25,17 @@ class PeopleServiceTests : QuickSpec {
                         "phone" : "Another Phone",
                         "age" : "Another Age"
                     ]]
-                return OHHTTPStubsResponse(JSONObject: obj, statusCode: 200, headers: nil)
+                return OHHTTPStubsResponse(jsonObject: obj, statusCode: 200, headers: nil)
             }
 
-            stub(isHost("localhost") && isPath("/personByID") && isMethodGET()) { request in
+            let _ = stub(condition: isHost("localhost") && isPath("/personByID") && isMethodGET()) { request in
                 let obj = [[
                     "id" : expectedPerson.id,
                     "name" : expectedPerson.name,
                     "phone" : expectedPerson.phone,
                     "age" : expectedPerson.age
                     ]]
-                return OHHTTPStubsResponse(JSONObject: obj, statusCode: 200, headers: nil)
+                return OHHTTPStubsResponse(jsonObject: obj, statusCode: 200, headers: nil)
             }
         }
 

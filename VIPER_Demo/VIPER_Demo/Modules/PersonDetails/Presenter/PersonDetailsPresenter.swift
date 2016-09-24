@@ -11,11 +11,11 @@ class PersonDetailsPresenter : PersonDetailsPresenterType {
     var userInterface: PersonDetailsView?
     var interactor: PersonDetailsInteractorType?
 
-    func updateViewFor(id id: Int) {
+    func updateViewFor(id: Int) {
         interactor?.getPersonBy(id: id)
     }
 
-    func got(person person: PersonDetailsData) {
+    func got(person: PersonDetailsData) {
         userInterface?.display(PersonDetailsDataModel(person: person))
     }
 

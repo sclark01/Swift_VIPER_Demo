@@ -28,7 +28,7 @@ class PeopleListWireFrameTests : QuickSpec {
             it("should present the proper view controller to the mainwireframe") {
                 peopleListWireFrame.presentListInterfaceFrom(UIWindow())
 
-                expect(mockMainWireFrame.didDisplayWithViewController).to(beAKindOf(PeopleListViewController))
+                expect(mockMainWireFrame.didDisplayWithViewController).to(beAKindOf(PeopleListViewController.self))
             }
 
             it("should present the correct view controller and id to person details wireframe") {
@@ -36,7 +36,7 @@ class PeopleListWireFrameTests : QuickSpec {
                 peopleListWireFrame.peopleListViewController = PeopleListViewController()
                 peopleListWireFrame.presentDetailsFor(id: id)
 
-                expect(mockPersonDetailsWireFrame.didPresentWithViewController).to(beAKindOf(PeopleListViewController))
+                expect(mockPersonDetailsWireFrame.didPresentWithViewController).to(beAKindOf(PeopleListViewController.self))
                 expect(mockPersonDetailsWireFrame.didPresentWithID) == id
             }
         }

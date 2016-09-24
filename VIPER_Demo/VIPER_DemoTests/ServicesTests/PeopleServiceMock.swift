@@ -8,12 +8,12 @@ class PeopleServiceMock : PeopleServiceType {
     var returnWithPerson: Person?
     var getPeopleCalled = false
 
-    func getPeople(onCompletion: ([Person]) -> Void) {
+    func getPeople(_ onCompletion: @escaping ([Person]) -> Void) {
         getPeopleCalled = true
         onCompletion([returnWithPerson!])
     }
 
-    func getPersonByID(withID id: Int, onCompletion: (Person) -> Void) {
+    func getPersonByID(withID id: Int, onCompletion: @escaping (Person) -> Void) {
         getPersonByIdCallWithId = id
         onCompletion(returnWithPerson!)
     }

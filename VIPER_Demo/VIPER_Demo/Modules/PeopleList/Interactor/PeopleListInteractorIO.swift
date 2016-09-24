@@ -5,5 +5,5 @@ protocol PeopleListInteractorInput {
 }
 
 protocol PeopleListInteractorOutput {
-    func gotPeople(people people: [PersonForListData])
+    func gotPeople(people: [PersonForListData])
 }

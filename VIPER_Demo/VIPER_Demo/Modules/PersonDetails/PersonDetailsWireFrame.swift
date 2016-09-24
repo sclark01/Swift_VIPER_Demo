@@ -11,7 +11,7 @@ class PersonDetailsWireFrame {
         self.personDetailsInteractor = personDetailsInteractor
     }
 
-    func presentDetailsViewFrom(viewController viewController: UIViewController, withId id: Int) {
+    func presentDetailsViewFrom(viewController: UIViewController, withId id: Int) {
         let storyBoard = UIStoryboard(name: "PersonDetails", bundle: nil)
         guard let newViewController = storyBoard.instantiateInitialViewController() as? PersonDetailsViewController else { return }
 
@@ -29,7 +29,7 @@ class PersonDetailsWireFrame {
         oldVC.navigationController?.pushViewController(vc, animated: true)
     }
 
-    private func configurePersonDetailsPresenterWith(viewController vc: PersonDetailsViewController) {
+    fileprivate func configurePersonDetailsPresenterWith(viewController vc: PersonDetailsViewController) {
         personDetailsPresenter.userInterface = vc
         personDetailsPresenter.personDetailsWireFrame = self
         personDetailsPresenter.interactor = personDetailsInteractor

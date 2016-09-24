@@ -5,7 +5,7 @@ import Foundation
 class PeopleListWireFrameMock : PeopleListWireFrame {
     var didPresentWithID: Int!
 
-    override func presentDetailsFor(id id: Int) {
+    override func presentDetailsFor(id: Int) {
         didPresentWithID = id
     }
 }

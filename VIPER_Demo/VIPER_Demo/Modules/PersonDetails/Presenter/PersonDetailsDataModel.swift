@@ -1,7 +1,7 @@
 import Foundation
 
 struct PersonDetailsDataModel {
-    private let person: PersonDetailsData
+    fileprivate let person: PersonDetailsData
 
     init(person: PersonDetailsData) {
         self.person = person

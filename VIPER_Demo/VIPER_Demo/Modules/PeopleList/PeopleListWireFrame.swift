@@ -16,7 +16,7 @@ class PeopleListWireFrame {
         self.personDetailsWireFrame = detailsWireFrame
     }
 
-    func presentListInterfaceFrom(window: UIWindow) {
+    func presentListInterfaceFrom(_ window: UIWindow) {
         let storyBoard = UIStoryboard(name: "PeopleList", bundle: nil)
         guard let viewController = storyBoard.instantiateInitialViewController() as? PeopleListViewController else { return }
 
@@ -28,13 +28,13 @@ class PeopleListWireFrame {
         mainWireFrame.display(rootViewController: viewController, inWindow: window)
     }
 
-    func presentDetailsFor(id id: Int) {
+    func presentDetailsFor(id: Int) {
         if let viewController = peopleListViewController {
             personDetailsWireFrame.presentDetailsViewFrom(viewController: viewController, withId: id)
         }
     }
 
-    private func buildPeopleListPresenter(withViewController viewController: PeopleListViewController) {
+    fileprivate func buildPeopleListPresenter(withViewController viewController: PeopleListViewController) {
         peopleListPresenter.interactor = peopleListInteractor
         peopleListPresenter.userInterface = viewController
         peopleListPresenter.peopleListWireFrame = self

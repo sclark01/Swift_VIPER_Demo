@@ -14,7 +14,7 @@ class PersonDetailsInteractorMock : PersonDetailsInteractorType {
         service = PeopleServiceMock()
     }
 
-    func getPersonBy(id id: Int) {
+    func getPersonBy(id: Int) {
         getPersonByIdCalled = true
         getPersonByIdCalledWithId = id
     }
