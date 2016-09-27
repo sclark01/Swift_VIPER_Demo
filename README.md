@@ -56,10 +56,18 @@ For most projects VIPER is probably overkill. It's definitely not an architectur
 * `cd` into the directory
 * Open the project: `open VIPER_Demo/VIPER_Demo.xcworkspace` 
 
-#### 4. Start the server
-* From the main directory, `cd server`
-* Install dependencies, `npm install`
-* Start server, `npm start`
+#### 4. Start a  server
+
+##### Vapor Server (Recommended): 
+1. Install [Vapor](http://vapor.codes/): `curl -sL toolbox.vapor.sh | bash`
+2. From the main director, `cd vaporServer` 
+4. Run `vapor build`
+3. Once the build has completed, run `vapor run serve`
+
+##### Node Server: 
+1. From the main directory, `cd server`
+2. Install dependencies, `npm install`
+3. Start server, `npm start`
 
 ## Sources & Further Readings
 - https://www.objc.io/issues/13-architecture/viper/

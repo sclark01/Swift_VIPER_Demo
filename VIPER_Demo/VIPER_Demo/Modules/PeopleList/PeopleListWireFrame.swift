@@ -34,7 +34,7 @@ class PeopleListWireFrame {
         }
     }
 
-    fileprivate func buildPeopleListPresenter(withViewController viewController: PeopleListViewController) {
+    private func buildPeopleListPresenter(withViewController viewController: PeopleListViewController) {
         peopleListPresenter.interactor = peopleListInteractor
         peopleListPresenter.userInterface = viewController
         peopleListPresenter.peopleListWireFrame = self

@@ -19,7 +19,7 @@ class PeopleListInteractor : PeopleListInteractorType {
             let peopleList = people.map {
                 PersonForListData(person: $0)
             }
-            self?.output.gotPeople(people: peopleList)
+            self?.output.got(people: peopleList)
         }
     }
 }
