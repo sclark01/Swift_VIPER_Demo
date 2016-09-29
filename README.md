@@ -40,6 +40,7 @@ For most projects VIPER is probably overkill. It's definitely not an architectur
 ## Running the Demo App
 
 #### 1. Install Xcode
+
 * Download Xcode 8
 
 #### 2. Install Carthage
@@ -49,13 +50,21 @@ brew install carthage
 ```
 
 #### 3. Clone Repo
-* Clone repo: `git@github.com:sclark01/Swift_VIPER_Demo.git`
-* `cd` into the directory
-* Open the project: `open VIPER_Demo/VIPER_Demo.xcworkspace`
+
+```bash
+git clone git@github.com:sclark01/Swift_VIPER_Demo.git
+cd Swift_VIPER_Demo
+cd VIPER_Demo
+carthage bootstrap --platform iOS --no-use-binaries
+open VIPER_Demo/VIPER_Demo.xcworkspace
+```
 
 #### 4. Start a  server
 
 ##### Vapor Server (Recommended):
+
+From the main directory
+
 ```bash
 cd vaporServer
 swift build
@@ -63,9 +72,14 @@ swift build
 ```
 
 ##### Node Server:
-1. From the main directory, `cd server`
-2. Install dependencies, `npm install`
-3. Start server, `npm start`
+
+From the main directory
+
+```bash
+cd server
+npm install
+npm start
+```
 
 ## Sources & Further Readings
 - https://www.objc.io/issues/13-architecture/viper/
