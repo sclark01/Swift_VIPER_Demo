@@ -35,7 +35,7 @@ class PeopleListPresenterTests : QuickSpec {
 
                 let expectedModel = PeopleListDataModel(people: people)
 
-                peopleListPresenter.gotPeople(people: people)
+                peopleListPresenter.got(people: people)
 
                 expect(mockPeopleListView.didSetWithPeople) == expectedModel
             }

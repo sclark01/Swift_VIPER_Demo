@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2506072121F00A7ED9675282 /* Pods_VIPER_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3305099892D1F101CBC52F /* Pods_VIPER_Demo.framework */; };
-		389FBDA19DFD7A4A6946A517 /* Pods_VIPER_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F60D7A9FFE18D28BC7A578D /* Pods_VIPER_DemoTests.framework */; };
+		2E9905841D9CFA7C00217FA6 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E99057F1D9CFA7C00217FA6 /* Alamofire.framework */; };
+		2E9905881D9CFA7C00217FA6 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9905831D9CFA7C00217FA6 /* SwiftyJSON.framework */; };
+		2E9905891D9CFA9400217FA6 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9905801D9CFA7C00217FA6 /* Nimble.framework */; };
+		2E99058A1D9CFA9400217FA6 /* OHHTTPStubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9905811D9CFA7C00217FA6 /* OHHTTPStubs.framework */; };
+		2E99058B1D9CFA9400217FA6 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9905821D9CFA7C00217FA6 /* Quick.framework */; };
 		581551E01D889995009349E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581551DF1D889995009349E2 /* AppDelegate.swift */; };
 		581551E51D889995009349E2 /* PeopleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581551E31D889995009349E2 /* PeopleList.storyboard */; };
 		581551E71D889995009349E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 581551E61D889995009349E2 /* Assets.xcassets */; };
@@ -77,8 +80,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C3305099892D1F101CBC52F /* Pods_VIPER_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AFD0875145F55B9BABE3296 /* Pods-VIPER_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER_Demo/Pods-VIPER_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		2E99057F1D9CFA7C00217FA6 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		2E9905801D9CFA7C00217FA6 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		2E9905811D9CFA7C00217FA6 /* OHHTTPStubs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OHHTTPStubs.framework; path = Carthage/Build/iOS/OHHTTPStubs.framework; sourceTree = "<group>"; };
+		2E9905821D9CFA7C00217FA6 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		2E9905831D9CFA7C00217FA6 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		581551DC1D889995009349E2 /* VIPER_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VIPER_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		581551DF1D889995009349E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		581551E41D889995009349E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PeopleList.storyboard; sourceTree = "<group>"; };
@@ -138,10 +144,6 @@
 		58F635341D8B676E0043FCA4 /* PersonDetailsPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonDetailsPresenterTests.swift; path = VIPER_DemoTests/ModulesTests/PersonDetailsTests/PresenterTests/PersonDetailsPresenterTests.swift; sourceTree = SOURCE_ROOT; };
 		58F635361D8B6BFC0043FCA4 /* PersonDetailsViewMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonDetailsViewMock.swift; path = VIPER_DemoTests/ModulesTests/PersonDetailsTests/Mocks/PersonDetailsViewMock.swift; sourceTree = SOURCE_ROOT; };
 		58F635381D8B6DE20043FCA4 /* PersonDetailsDataModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonDetailsDataModelTests.swift; path = VIPER_DemoTests/ModulesTests/PersonDetailsTests/PresenterTests/PersonDetailsDataModelTests.swift; sourceTree = SOURCE_ROOT; };
-		5F60D7A9FFE18D28BC7A578D /* Pods_VIPER_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIPER_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90DD7CDAC0FA1E470F6EFF34 /* Pods-VIPER_DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER_DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER_DemoTests/Pods-VIPER_DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9E397B0817E3353A2BDA5911 /* Pods-VIPER_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER_Demo/Pods-VIPER_Demo.debug.xcconfig"; sourceTree = "<group>"; };
-		D317032A8855387120A188F1 /* Pods-VIPER_DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VIPER_DemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VIPER_DemoTests/Pods-VIPER_DemoTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,7 +151,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2506072121F00A7ED9675282 /* Pods_VIPER_Demo.framework in Frameworks */,
+				2E9905841D9CFA7C00217FA6 /* Alamofire.framework in Frameworks */,
+				2E9905881D9CFA7C00217FA6 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +160,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				389FBDA19DFD7A4A6946A517 /* Pods_VIPER_DemoTests.framework in Frameworks */,
+				2E9905891D9CFA9400217FA6 /* Nimble.framework in Frameworks */,
+				2E99058A1D9CFA9400217FA6 /* OHHTTPStubs.framework in Frameworks */,
+				2E99058B1D9CFA9400217FA6 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,11 +172,14 @@
 		581551D31D889995009349E2 = {
 			isa = PBXGroup;
 			children = (
+				2E99057F1D9CFA7C00217FA6 /* Alamofire.framework */,
+				2E9905801D9CFA7C00217FA6 /* Nimble.framework */,
+				2E9905811D9CFA7C00217FA6 /* OHHTTPStubs.framework */,
+				2E9905821D9CFA7C00217FA6 /* Quick.framework */,
+				2E9905831D9CFA7C00217FA6 /* SwiftyJSON.framework */,
 				581551DE1D889995009349E2 /* VIPER_Demo */,
 				581551F31D889996009349E2 /* VIPER_DemoTests */,
 				581551DD1D889995009349E2 /* Products */,
-				829FF0C0F334148F9E12E797 /* Pods */,
-				BDDD3DEDB05261E69894A106 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -451,26 +459,6 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
-		829FF0C0F334148F9E12E797 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9E397B0817E3353A2BDA5911 /* Pods-VIPER_Demo.debug.xcconfig */,
-				3AFD0875145F55B9BABE3296 /* Pods-VIPER_Demo.release.xcconfig */,
-				90DD7CDAC0FA1E470F6EFF34 /* Pods-VIPER_DemoTests.debug.xcconfig */,
-				D317032A8855387120A188F1 /* Pods-VIPER_DemoTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		BDDD3DEDB05261E69894A106 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0C3305099892D1F101CBC52F /* Pods_VIPER_Demo.framework */,
-				5F60D7A9FFE18D28BC7A578D /* Pods_VIPER_DemoTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -478,12 +466,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 581551F91D889996009349E2 /* Build configuration list for PBXNativeTarget "VIPER_Demo" */;
 			buildPhases = (
-				2451DBA8B826477726C0DCD0 /* [CP] Check Pods Manifest.lock */,
 				581551D81D889995009349E2 /* Sources */,
 				581551D91D889995009349E2 /* Frameworks */,
 				581551DA1D889995009349E2 /* Resources */,
-				2EB2B2711BFAE2E0C24B0D4F /* [CP] Embed Pods Frameworks */,
-				4BA5BC93C7CB663DCE1A7248 /* [CP] Copy Pods Resources */,
+				2E99058D1D9CFAB900217FA6 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -498,12 +484,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 581551FC1D889996009349E2 /* Build configuration list for PBXNativeTarget "VIPER_DemoTests" */;
 			buildPhases = (
-				8AB69A2646FE8B3E4E70686F /* [CP] Check Pods Manifest.lock */,
 				581551EC1D889996009349E2 /* Sources */,
 				581551ED1D889996009349E2 /* Frameworks */,
 				581551EE1D889996009349E2 /* Resources */,
-				F5B10DEAB4F65DFE457D3D9C /* [CP] Embed Pods Frameworks */,
-				8545419DD0C29025F9C0EF49 /* [CP] Copy Pods Resources */,
+				2E99058E1D9CFB3100217FA6 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -578,95 +562,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2451DBA8B826477726C0DCD0 /* [CP] Check Pods Manifest.lock */ = {
+		2E99058D1D9CFAB900217FA6 /* Copy Carthage Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "Copy Carthage Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
+			shellScript = "carthage copy-frameworks";
 		};
-		2EB2B2711BFAE2E0C24B0D4F /* [CP] Embed Pods Frameworks */ = {
+		2E99058E1D9CFB3100217FA6 /* Copy Carthage Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/OHHTTPStubs.framework",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "Copy Carthage Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIPER_Demo/Pods-VIPER_Demo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4BA5BC93C7CB663DCE1A7248 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIPER_Demo/Pods-VIPER_Demo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8545419DD0C29025F9C0EF49 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIPER_DemoTests/Pods-VIPER_DemoTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8AB69A2646FE8B3E4E70686F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F5B10DEAB4F65DFE457D3D9C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VIPER_DemoTests/Pods-VIPER_DemoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -858,10 +787,13 @@
 		};
 		581551FA1D889996009349E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E397B0817E3353A2BDA5911 /* Pods-VIPER_Demo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VIPER_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.VIPER-Demo";
@@ -872,10 +804,13 @@
 		};
 		581551FB1D889996009349E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AFD0875145F55B9BABE3296 /* Pods-VIPER_Demo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VIPER_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.VIPER-Demo";
@@ -886,11 +821,14 @@
 		};
 		581551FD1D889996009349E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90DD7CDAC0FA1E470F6EFF34 /* Pods-VIPER_DemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VIPER_DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.VIPER-DemoTests";
@@ -903,11 +841,14 @@
 		};
 		581551FE1D889996009349E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D317032A8855387120A188F1 /* Pods-VIPER_DemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VIPER_DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.VIPER-DemoTests";
